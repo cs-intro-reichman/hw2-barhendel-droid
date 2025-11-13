@@ -15,7 +15,7 @@ public class CalcPi {
 			}  
 		
  		};
-		System.out.printf("pi, approximated:  " + sum * 4 );
+		System.out.printf("pi, approximated:     " + sum * 4 );
 
 	}
 }
