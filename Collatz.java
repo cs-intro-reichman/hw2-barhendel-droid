@@ -6,11 +6,11 @@ public class Collatz {
 
 	for ( int i = 1;  i <= num ; i++) {
 		int sum = i ;
-		int j = 0;
+		int j = 1;
+		String history = "";
+
 		do {
-			if (mode == "v") {
-				System.out.print(sum + " ");
-			}
+			history += sum + " ";
 
 			if (sum % 2 == 1) {
 				sum = (sum * 3) + 1;
@@ -21,9 +21,10 @@ public class Collatz {
 			j++;
 		} while (sum != 1);
 
-		if (mode == "v") {
-			System.out.print("(" + j + ")");
-			System.out.println("");
+		history = history + sum + " ";
+
+		if (mode.equals("v")) {
+			System.out.println(history + "(" + j + ")");
 		}
 		
 	}
