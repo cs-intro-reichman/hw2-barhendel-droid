@@ -3,7 +3,7 @@ public class CalcPi {
 	public static void main(String [] args) { 
 		int num = Integer.parseInt(args[0]);
 		double pi = Math.PI;
-		System.out.printf("pi according to Java:  " + pi + "\n");
+		System.out.printf("pi according to Java: " + pi + "\n");
 	    double sum = 0.0;
 		for ( double i = 1; i <= num; i++ ) {
 
