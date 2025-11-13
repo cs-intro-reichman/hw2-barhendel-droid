@@ -2,7 +2,7 @@
 public class Collatz {
 	public static void main(String args[]) {
 	int num = Integer.parseInt(args[0]);
-	String mode = args[1];
+	String mode = args[1].toLowerCase();
 
 	for ( int i = 1;  i <= num ; i++) {
 		int sum = i ;

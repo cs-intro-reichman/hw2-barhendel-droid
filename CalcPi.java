@@ -3,7 +3,7 @@ public class CalcPi {
 	public static void main(String [] args) { 
 		int num = Integer.parseInt(args[0]);
 		double pi = Math.PI;
-		System.out.println("pi according to Java: " + pi );
+		System.out.printf("pi according to Java:  " + pi );
 	    double sum = 0.0;
 		for ( double i = 1; i <= num; i++ ) {
 
@@ -15,7 +15,7 @@ public class CalcPi {
 			}  
 		
  		};
-		System.out.println("pi, approximated: " + sum * 4 );
+		System.out.printf("pi, approximated:  " + sum * 4 );
 
 	}
 }
